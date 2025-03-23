@@ -10,8 +10,10 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        "bg-main-color": '#EFD9C1',
-        "bg-secondary-color": "#5F3C1B"
+        "main-color": '#EFD9C1',
+        "secondary-color": "#5F3C1B",
+        "header-black": "#3A4A3A",
+        "cta-primary": "#DE6132"
       },
       fontFamily: {
         inknut: ['Inknut Antiqua', 'serif']
