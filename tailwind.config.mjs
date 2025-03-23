@@ -16,6 +16,7 @@ export default {
         "cta-primary": "#DE6132"
       },
       fontFamily: {
+        epilogue: ['Epilogue', 'serif'],
         inknut: ['Inknut Antiqua', 'serif']
       },
       screens: {

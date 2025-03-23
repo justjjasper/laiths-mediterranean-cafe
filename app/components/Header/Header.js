@@ -26,7 +26,7 @@ const MenuItemUl = tw.ul`
 const MenuItemLi = tw.li`
   bg-cta-primary px-4 py-3
   rounded-md
-  font-inknut
+  font-epilogue
 `
 //! ---> DATA <---
 const menuItems = [
