@@ -17,6 +17,9 @@ export default {
       },
       fontFamily: {
         inknut: ['Inknut Antiqua', 'serif']
+      },
+      screens: {
+        xsm: '560px'
       }
     },
   },

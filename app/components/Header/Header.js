@@ -1,5 +1,6 @@
 'use client'
 
+import { useState } from 'react';
 import Link from 'next/link';
 import Hamburger from 'hamburger-react';
 import tw from 'tailwind-styled-components';
@@ -7,8 +8,10 @@ import tw from 'tailwind-styled-components';
 //! ---> STYLES <---
 const NavContainer = tw.nav`
   flex justify-between items-center
-  px-16 py-7
-  bg-header-black border-2
+  bg-header-black shadow-[#1C2526] shadow-md
+  px-5 py-3
+  xsm:px-10 sm:px-5 lg:px-16
+  xsm:py-5 sm:p-7
 `
 
 const LogoLink = tw(Link)`
@@ -16,7 +19,8 @@ const LogoLink = tw(Link)`
 `
 
 const MenuItemUl = tw.ul`
-  flex gap-10
+  hidden
+  md:flex gap-10
   text-white
 `
 const MenuItemLi = tw.li`
@@ -45,6 +49,9 @@ const menuItems = [
 
 //! COMPONENT
 export default function Header() {
+  const [toggleMenu, setToggleMenu] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <NavContainer>
       <LogoLink
@@ -66,6 +73,24 @@ export default function Header() {
           </MenuItemLi>
         ))}
       </MenuItemUl>
+
+      {/* MobileMenu */}
+      <button
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+        onClick={() => setToggleMenu(!toggleMenu)}
+        aria-expanded={toggleMenu}
+        aria-label={toggleMenu ? 'Close menu' : 'Open menu'}
+        className='block md:hidden'
+      >
+        <Hamburger
+          color={isHovered ? 'gray' : 'white'}
+          transitionDuration={0.3}
+          toggled={toggleMenu}
+          toggle={setToggleMenu}
+          aria-label='Mobile Menu'
+        />
+      </button>
     </NavContainer>
   )
 }
