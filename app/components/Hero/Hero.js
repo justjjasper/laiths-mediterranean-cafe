@@ -23,7 +23,7 @@ const H3 = tw(motion.h3)`
 `;
 
 const CTAContainer = tw(motion.div)`
-  flex gap-5
+  flex gap-5 font-epilogue
 `;
 
 const CTAExternalLink = tw(Link)`
