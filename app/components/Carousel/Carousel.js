@@ -45,7 +45,7 @@ export default function Carousel() {
         className="flex items-center w-full"
       >
         {carouselItems.map((item, index) => (
-          <SwiperSlide key={index} style={{ width: '243px', height: '300px' }}>
+          <SwiperSlide key={index} style={{ width: '275px', height: '375px' }}>
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
