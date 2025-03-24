@@ -12,11 +12,14 @@ const ContainerSection = tw.section`
 `;
 
 const H1 = tw.h1`
-  font-inknut text-4xl w-[20ch] leading-relaxed text-center
+  font-inknut w-[20ch] leading-relaxed text-center
+  text-3xl xsm:text-4xl
 `;
 
 const H3 = tw.h3`
-  font-epilogue font-thin text-xl w-[50%] text-center
+  font-epilogue font-thin text-xl text-center
+  w-[90%] xsm:w-[80%] md:w-[50%]
+  mb-4
 `;
 
 const CTAContainer = tw.div`
