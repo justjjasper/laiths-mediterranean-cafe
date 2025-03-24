@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { motion } from 'framer-motion';
 import Link from 'next/link';
 import tw from 'tailwind-styled-components';
 
@@ -11,18 +11,18 @@ const ContainerSection = tw.section`
   py-20
 `;
 
-const H1 = tw.h1`
+const H1 = tw(motion.h1)`
   font-inknut w-[20ch] leading-relaxed text-center
   text-3xl xsm:text-4xl
 `;
 
-const H3 = tw.h3`
+const H3 = tw(motion.h3)`
   font-epilogue font-thin text-xl text-center
   w-[90%] xsm:w-[80%] md:w-[50%]
   mb-4
 `;
 
-const CTAContainer = tw.div`
+const CTAContainer = tw(motion.div)`
   flex gap-5
 `;
 
@@ -42,12 +42,26 @@ const CTALink = tw.a`
 export default function Hero() {
   return (
     <ContainerSection>
-      <H1>Elevate Your Meals with Mediterranean Delights</H1>
-      <H3>
+      <H1
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: 'easeOut' }}
+      >
+        Elevate Your Meals with Mediterranean Delights
+      </H1>
+      <H3
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: 'easeOut' }}
+      >
         Indulge in an authentic Mediterranean dining experience that tantalizes
         your taste buds and elevates your dining expectations.
       </H3>
-      <CTAContainer>
+      <CTAContainer
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: 'easeOut' }}
+      >
         <CTAExternalLink
           href='https://www.grubhub.com/restaurant/laiths-mediterranean-cafe-860-e-carson-st-carson/7583424'
           target='_blank'
