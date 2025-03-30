@@ -1,5 +1,5 @@
 'use client';
-
+//! Fix carousel, its above z-index of header
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
@@ -42,7 +42,7 @@ export default function Carousel() {
         }}
         allowTouchMove={false}
         loop={true}
-        className="flex items-center w-full"
+        className="flex items-center w-full z-[-1]"
       >
         {carouselItems.map((item, index) => (
           <SwiperSlide key={index} style={{ width: '275px', height: '375px' }}>

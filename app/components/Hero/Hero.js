@@ -16,7 +16,7 @@ const H1 = tw(motion.h1)`
   text-3xl xsm:text-4xl
 `;
 
-const H3 = tw(motion.h3)`
+const Subheader = tw(motion.p)`
   font-epilogue font-thin text-xl text-center
   w-[90%] xsm:w-[80%] md:w-[50%]
   mb-4
@@ -27,12 +27,6 @@ const CTAContainer = tw(motion.div)`
 `;
 
 const CTAExternalLink = tw(Link)`
-  bg-cta-primary px-4 py-3
-  rounded-md text-white
-  font-epilogue
-`;
-
-const CTALink = tw.a`
   bg-cta-primary px-4 py-3
   rounded-md text-white
   font-epilogue
@@ -49,14 +43,14 @@ export default function Hero() {
       >
         Elevate Your Meals with Mediterranean Delights
       </H1>
-      <H3
+      <Subheader
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: 'easeOut' }}
       >
         Indulge in an authentic Mediterranean dining experience that tantalizes
         your taste buds and elevates your dining expectations.
-      </H3>
+      </Subheader>
       <CTAContainer
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -69,7 +63,6 @@ export default function Hero() {
         >
           Order Now
         </CTAExternalLink>
-        <CTALink href='#menu'>View Menu</CTALink>
       </CTAContainer>
     </ContainerSection>
   );
