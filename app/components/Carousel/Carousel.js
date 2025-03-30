@@ -10,7 +10,6 @@ import tw from 'tailwind-styled-components';
 const ContainerSection = tw.section`
   w-full overflow-hidden
   bg-main-color
-  pb-20
 `;
 
 //! ---> DATA <---
@@ -34,9 +33,9 @@ export default function Carousel() {
         spaceBetween={30}
         slidesPerView="auto"
         centeredSlides={false}
-        speed={4000} // Slower, smooth scrolling
+        speed={4000}
         autoplay={{
-          delay: 0, // Continuous scrolling
+          delay: 0,
           disableOnInteraction: false,
           pauseOnMouseEnter: false,
         }}

@@ -29,6 +29,7 @@ const MenuItemLink = tw(Link)`
   rounded-md
   font-epilogue
 `;
+
 //! ---> DATA <---
 const menuItems = [
   {
