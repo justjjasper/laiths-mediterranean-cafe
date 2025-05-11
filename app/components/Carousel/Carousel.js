@@ -1,5 +1,5 @@
 'use client';
-//! Fix carousel, its above z-index of header
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
