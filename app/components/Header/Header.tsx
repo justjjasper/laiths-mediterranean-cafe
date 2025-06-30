@@ -102,7 +102,6 @@ export default function Header() {
       >
         <Hamburger
           color={isHovered ? 'gray' : 'white'}
-          transitionDuration={0.3}
           toggled={toggleMenu}
           toggle={setToggleMenu}
           aria-label="Mobile Menu"

@@ -4,8 +4,7 @@ import Image from 'next/image';
 
 //! ---> STYLES <---
 const ContainerSection = tw.section`
-  flex flex-col items-center
-  bg-main-color gap-5
+  flex flex-col items-center gap-5
   py-20 bg-secondary-color
   px-5 xsm:px-10 sm:px-5 lg:px-16
   pb-16 md:pb-20
@@ -98,14 +97,15 @@ export default function Menu() {
     <ContainerSection>
       <H3>Savor Mediterranean Delights Today</H3>
       {menu.map((section, index) => {
+
         return (
-          <MenuContainer key={section + index}>
+          <MenuContainer key={section + index.toString()}>
             <CategoryTitle>{section.category}</CategoryTitle>
             {section.subtitle && <CategorySubTitle>({section.subtitle})</CategorySubTitle>}
             <MenuItems>
             {section.items.map((item, index) => {
               return (
-                <MenuItem key={item + index}>
+                <MenuItem key={item + index.toString()}>
                   <ItemName>
                     {item.name}
                   </ItemName>
