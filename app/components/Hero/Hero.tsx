@@ -33,7 +33,7 @@ const CTAExternalLink = tw(Link)`
 `;
 
 //! ---> COMPONENT <---
-export default function Hero() {
+export const Hero = () => {
   return (
     <ContainerSection>
       <H1

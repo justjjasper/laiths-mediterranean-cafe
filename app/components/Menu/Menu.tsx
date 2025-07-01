@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import tw from 'tailwind-styled-components';
 import Image from 'next/image';
 
@@ -92,7 +91,7 @@ const menu = [
 ];
 
 //! ---> COMPONENT <---
-export default function Menu() {
+export const Menu = () => {
   return (
     <ContainerSection>
       <H3>Savor Mediterranean Delights Today</H3>

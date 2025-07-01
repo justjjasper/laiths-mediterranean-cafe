@@ -67,7 +67,7 @@ const menuItems = [
 ];
 
 //! COMPONENT
-export default function Header() {
+export const Header = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 

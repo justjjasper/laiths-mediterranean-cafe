@@ -1,9 +1,4 @@
-import Image from "next/image";
-
-import Hero from './components/Hero/Hero';
-import Carousel from './components/Carousel/Carousel';
-import OurStory from './components/OurStory/OurStory';
-import Menu from './components/Menu/Menu';
+import { Hero, Carousel, OurStory, Menu, Location, Contact } from './components'
 
 export default function Home() {
   return (
@@ -12,6 +7,8 @@ export default function Home() {
       <Carousel />
       <OurStory />
       <Menu />
+      {/* <Location /> */}
+      <Contact/>
     </main>
   );
 }

@@ -1,0 +1,7 @@
+export * from './Carousel/Carousel'
+export * from './Header/Header'
+export * from './Hero/Hero'
+export * from './Location/Location'
+export * from './Menu/Menu'
+export * from './OurStory/OurStory'
+export * from './Contact/Contact'

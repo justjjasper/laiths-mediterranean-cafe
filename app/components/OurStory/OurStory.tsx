@@ -35,7 +35,7 @@ const MotionImage = tw(Image)`
 `;
 
 //! ---> COMPONENT <---
-export default function OurStory() {
+export const OurStory = () => {
   return (
     <ContainerSection id='our-story' className='scroll-smooth relative'>
       <Content>

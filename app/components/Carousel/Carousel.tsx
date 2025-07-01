@@ -25,7 +25,7 @@ const carouselItems = [
 ];
 
 //! ---> COMPONENT <---
-export default function Carousel() {
+export const Carousel = () => {
   return (
     <ContainerSection>
       <Swiper

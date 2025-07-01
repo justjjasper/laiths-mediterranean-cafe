@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "cp env/.env.local .env && next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -15,9 +15,11 @@
     "clsx": "^2.1.1",
     "framer-motion": "^12.5.0",
     "hamburger-react": "^2.5.2",
+    "mapbox-gl": "^3.13.0",
     "next": "15.1.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-hook-form": "^7.59.0",
     "swiper": "^11.2.6",
     "tailwind-styled-components": "^2.2.0",
     "typescript": "^5.8.3"
